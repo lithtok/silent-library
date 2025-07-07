@@ -91,7 +91,7 @@
 </footer>
 
    <script>
-  const books = {
+  <!--const books = {
         "jurassic-park": { 
         "title": "Jurassic Park",
         "author": "Michael Crichton",
@@ -198,7 +198,7 @@
         "cover": "assests/it.jpg",
         "synopsis": "Set in the fictional town of Derry, Maine, seven children—and later adults—face a malevolent, shape-shifting entity known as It which often appears as Pennywise the clown. The story alternates between their youth and their return 27 years later to confront their fears once more."
       }
-    };
+    };-->
 
     
     const params = new URLSearchParams(window.location.search);
@@ -254,7 +254,7 @@
     fetch('books.json')
       .then(res => res.json())
       .then(books => {
-        const book = books[bookId];
+        const book = books[bookid];
        if (!book) return;
        
        document.getElementById('books-detail');
