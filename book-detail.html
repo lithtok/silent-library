@@ -254,10 +254,10 @@
     fetch('books.json')
       .then(res => res.json())
       .then(books => {
-        const book = books[bookId];
+        const book = books[id];
        if (!book) return;
        
-       document.getElementById('book-detail');
+       const container = document.getElementById('book-detail');
 
         if (!book) {
           container.innerHTML = `<div class="col-12 text-danger text-center"><p>Book not found.</p></div>`;
