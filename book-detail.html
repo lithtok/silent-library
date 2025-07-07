@@ -254,7 +254,7 @@
     fetch('books.json')
       .then(res => res.json())
       .then(books => {
-        const book = books[id];
+        const book = books[bookId];
        if (!book) return;
        
        const container = document.getElementById('book-detail');
