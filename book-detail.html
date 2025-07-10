@@ -17,235 +17,21 @@
 
 
   <!-- Include header -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-     <a class="navbar-brand" href="index.html">
-      <img src="assests/logo.jpg" alt="Logo" width="50" height="44" class="d-inline-block align-text-top">
-      Silent Library
-     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <form class="d-flex" role="search" action="books.html" method="GET">
-        <input class="form-control me-2" type="search" placeholder="Search books..." aria-label="Search" name="query">
-        <button class="btn btn-outline-light" type="submit">Search</button>
-      </form>
- 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
-        <li class="nav-item"><a class="nav-link" href="events-and-promotions.html">Events</a></li>
-
-        <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
-      </ul>
-
-
+   <div id="header"></div>
+  
+    <header class="bg-primary text-white text-center py-5">
+     <div class="container"></div>
+      <h1 class="display-4">Welcome to MyLibrary</h1>
+      <p class="lead">Explore. Borrow. Learn.</p>
     </div>
-  </div>
-</nav>
-
-<body class="d-flex flex-column min-vh-100">
+  </header>
+  
   <header class="bg-dark text-white text-center py-3">
     <h1>Book Details</h1>
   </header>
 
-  <main class="container my-5 flex-fill">
-    <div class="row" id="book-detail"></div>
-      <!-- Page content here -->
-  </main>
-
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-   <!-- Include footer -->
-  
-  <div class="container ">
-    
-   
 
 
-    <div class="row">
-      <div class="col-md-6 text-end d-flex  align-items-center">
-        <div class="d-flex">
-
-        <a  href="privacy.html" target="_blank" class="text-white me-3">Privacy_Policy</a>
-        <a href="sitemap.html" target="_blank" class="text-white me-3">Sitemap</a>
-        <a href="contact.html" target="_blank" class="text-white me-3">Contact</a>
-        <!-- Social Media -->
-        <a href="https://www.facebook.com/silentlibrary" target="_blank" class="text-white me-2">
-         <i class="fab fa-facebook fa-lg"></i> Facebook
-        </a>
-        <a href="https://www.instagram.com/silentlibrary" target="_blank" class="text-white mx-3">
-            <i class="fab fa-instagram fa-2x"></i> Instragram
-        </a>
-        </div>
-        <div class="col-md-6 text-end">
-             <p>&copy; 2025 Silent Library. All rights reserved.</p>
-
-        </div>
-       
-      </div>
-    </div>
- 
-  </div>
-
-</footer>
-
-    <!--<script>
- const books = {
-        "jurassic-park": { 
-        "title": "Jurassic Park",
-        "author": "Michael Crichton",
-        "genre": "Science Fiction / Thriller",
-        "year": "1990",
-        "isbn": "978-0345538987",
-        "status.": "Available",
-        "cover": "assests/jurassic-park.jpg",
-        "synopsis": "A thrilling story of genetic engineering gone wrong. Scientists bring dinosaurs back to life—but can they control them?"
-      },
-
-       
-        "sherlock-holmes": {
-        "title": "Sherlock Holmes: The Thinking Engine",
-        "author": "James Lovegrove",
-        "genre": "Mystery / Sci-Fi",
-        "year": "2015",
-        "isbn": "978-1783295998",
-        "status": "Not Available",
-        "cover": "assests/sherlock-holmes.jpg",
-        "synopsis": "A powerful new machine can solve crimes before they happen. Holmes suspects there's more to it than logic and gears..."
-      },
-
-      
-        "harry-potter-and-the-sorcerers-stone": { 
-        "title": "Harry Potter and the Sorcerer's Stone",
-        "author": "J.K. Rowling",
-        "genre": "Fiction / Fantasy ",
-        "year": "1997",
-        "status": "Not Available",
-        "cover": "assests/harry-potter-and-the-sorcerers-stone.jpg",
-        "synopsis": "The first book in the Harry Potter series introduces readers to Harry Potter, a young boy who discovers he is a wizard on his 11th birthday. He attends Hogwarts School of Witchcraft and Wizardry, where he makes friends, learns magic, and undiscover's secrets about his mysterious past and a dark wizard named Voldemort."
-      },
-      
-        "sherlock-holmes-and-the-zombie-problem": {
-        "title": "Sherlock Holmes and the Zombie Problem",
-        "author": "Nick S.Thomas",
-        "genre": "Mystery, thriller, zombie-horror mash-up ",
-        "year": "2010",
-        "status": "Not Available",
-        "cover": "assests/sherlock-holmes-and-the-zombie-problem.jpg",
-        "synopsis": "A 60,000-word pulp novel reimagining “The Final Problem” (1893) with Moriarty unleashing zombies across England. Holmes and Watson use martial arts, firearms, fencing—and their wits—on a bloody, globe‑trotting mission to save the world."
-      },
-
-       "spook-country": {
-      "title": "Spook Country",
-      "author": "William Gibson",
-      "genre": "Techno-thriller, Speculative Fiction",
-      "year": "2007",      
-      "cover": "assests/spook-country.jpg",
-      "status": "Available",
-      "synopsis": "A thriller by William Gibson exploring surveillance, geopolitics, and virtual landscapes."
-    },
-    
-     "succubus-revealed": {
-      "title": "Succubus Revealed",
-      "author": "Richelle Mead",
-      "genre": "Urban Fantasy / Paranormal Romance",
-      "year": "2011",
-      "cover": "assests/succubus-revealed.jpg",
-      "status": "Available",
-      "synopsis": "Georgina Kincaid has been a lot of things: a seductress, a demon, a lover, and a pawn of Hell. But now she faces her toughest challenge yet — love and freedom. In this final chapter of the series, Georgina must choose between eternal damnation or sacrificing everything for the man she loves. With alliances shifting and secrets exposed, her decision will reshape the supernatural world."
-      
-    },
-        
-      "valley-of-death-zombie-trailer-park": { 
-        "title": "Valley of Death: Zombie Trailer Park",
-        "author": "William R.Bebb",
-        "genre": "Fiction / Horror",
-        "year": "2010",
-        "status": "Not Available",
-        "cover": "assests/valley-of-death-zombie-trailer-park.jpg",
-        "synopsis": "In a secluded valley near Albuquerque, a trailer park's residents—including illegal immigrants, war vets, meth cooks, and hermits—face a zombie outbreak following a deadly industrial accident. When Josey arrives, he discovers the undead horrors within the valley—and worse than rattlesnakes—is the living dead."
-
-    },
-
-       "the-darwin-elevator": {
-        "title": "The Darwin Elevator",
-        "author": " Jason M.Hough",
-        "genre": "Fiction / Horror",
-        "year": "2013",
-        "status": "Not Available",
-        "cover": "assests/the-darwin-elevator.jpg",
-        "synopsis": "Set in the mid-23rd century, Earth has been devastated by an alien plague that turns most people into savage “subs.” The only safe zone is the area around a space elevator in Darwin, Australia, built by mysterious alien “Builders.” Immune scavenger Skyler Luiken leads missions beyond the elevator's protective aura to recover supplies—until the elevator begins to fail and deeper alien secrets are unearthed."
-    },
-
-       "percy-jackson-and-the-olympians-the-lightning-thief": {
-        "title": "Percy Jackson and the Olympians: The Lightning Thief",
-        "author": "  Rick Riordan",
-        "genre": "Fiction ",
-        "year": "2005",
-        "status": "Not Available",
-        "cover": "assests/percy-jackson-and-the-olympians-the-lightning-thief.jpg",
-        "synopsis": "Percy Jackson, a twelve-year-old demigod, is accused of stealing Zeus's master lightning bolt. He embarks on a ten-day quest across the U.S. with his friends Annabeth and Grover to retrieve it and prevent a war among the gods."
-     },
-      
-     
-       "it": {
-        "title": "IT",
-        "author": "  Stephen King",
-        "genre": "Horror, dark fantasy, coming-of-age ",
-        "year": "1986",
-        "status": "Not Available",
-        "cover": "assests/it.jpg",
-        "synopsis": "Set in the fictional town of Derry, Maine, seven children—and later adults—face a malevolent, shape-shifting entity known as It which often appears as Pennywise the clown. The story alternates between their youth and their return 27 years later to confront their fears once more."
-      }
-    };
-
-    
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
-    const book = books[id];
-    const container = document.getElementById('book-detail');
-
-    if (!book) {
-      container.innerHTML = `<div class="col-12 text-danger text-center"><p>Book not found.</p></div>`;
-    } else {
-      container.innerHTML = `
-      
-        <div class="col-md-4">
-          <img src="${book.cover}" alt="${book.title}" class="img-fluid rounded shadow">
-        </div>
-        <div class="col-md-8">
-          <h2>${book.title}</h2>
-          <p><strong>Author:</strong> ${book.author}</p>
-          <p><strong>Genre:</strong> ${book.genre}</p>
-          <p><strong>Year:</strong> ${book.year}</p>
-          <p><strong>Synopsis:</strong> ${book.synopsis}</p>
-          <p><strong>status:</strong> ${book.status}</p> 
-    
-          <a href="books.html" class="btn btn-secondary mt-3">← Back to Book List</a>
-        </div>
-      `;
-    
-
-    detail.innerHTML = `
-  <div class="col-md-4">
-    <img src="${book.cover}" class="img-fluid rounded shadow" alt="${book.title}">
-  </div>
-  <div class="col-md-8">
-    <h2>${book.title}</h2>
-    <p><strong>Author:</strong> ${book.author}</p>
-    <p><strong>Genre:</strong> ${book.genre}</p>
-    <p><strong>Year:</strong> ${book.year}</p>
-    <p><strong>Synopsis:</strong> ${book.synopsis}</p>
-
-    <a href="borrow.html?book=${encodeURIComponent(book.title)}" class="btn btn-success me-2">
-      <i class="bi bi-book-fill"></i> Borrow This Book
-    </a>
-    <a href="books.html" class="btn btn-secondary">← Back to List</a>
-  </div>
-`;
-}
- </script>-->
 
  <script>
     const params = new URLSearchParams(window.location.search);
@@ -288,9 +74,71 @@
         `;
       }); 
   </script>
- 
+          <div class="modal fade" id="loanModal" tabindex="-1" aria-labelledby="loanModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loanModalLabel">Loan Book</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Book:</strong> <span id="loanBookTitle"></span></p>
+        <div class="mb-3">
+          <label for="loanDuration" class="form-label">Loan Duration (days)</label>
+          <input type="number" class="form-control" id="loanDuration" required>
+        </div>
+        <div class="mb-3">
+          <label for="loanEmail" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="loanEmail" required>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Confirm Loan</button>
+      </div>
+    </form>
+  </div>
+</div>
 
+<!-- Reserve Modal -->
+<div class="modal fade" id="reserveModal" tabindex="-1" aria-labelledby="reserveModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="reserveModalLabel">Reserve Book</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Book:</strong> <span id="reserveBookTitle"></span></p>
+        <div class="mb-3">
+          <label for="reserveEmail" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="reserveEmail" required>
+        </div>
+        <p class="text-muted">We’ll notify you when a copy becomes available.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-secondary">Confirm Reservation</button>
+       </div>
+    </form>
+  </div>
+</div>
+
+<!-- JS to populate modals dynamically -->
+<script>
+  function openModal(type, title) {
+    if (type === 'loan') {
+      document.getElementById('loanBookTitle').textContent = title;
+    } else if (type === 'reserve') {
+      document.getElementById('reserveBookTitle').textContent = title;
+    }
+  }
+</script>
+
+ <div id="footer"></div>
+
+ <script src="../scripts/include.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <div class="d-flex flex-column min-vh-100"></div>
+ 
+  
+
 </body>
 </html>        
