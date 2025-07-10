@@ -9,6 +9,6 @@ function includeHTML(id, file) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  includeHTML("header", "../pages/header.html");
-  includeHTML("footer", "../pages/footer.html");
+  includeHTML("header", "header.html");
+  includeHTML("footer", "footer.html");
 });
